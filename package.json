@@ -1,0 +1,25 @@
+{
+  "name": "ourmaninindia-23",
+  "version": "5.0.0",
+  "description": "Our Man in India web site",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "docs": "node_modules/.bin/jsdoc -c jsdoc.json --readme ./README.md",
+    "jsdoc": "jsdoc -a all -c jsdoc.json -r -R README.md -d docs/jsdoc "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ourmaninindia/ourmaninindia-4.git"
+  },
+  "author": "Alfred Tuinman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ourmaninindia/ourmaninindia-23/issues"
+  },
+  "homepage": "https://github.com/ourmaninindia/ourmaninindia-23#readme",
+  "dependencies": {
+    "a11y-dialog": "^8.0.4",
+    "vanilla-cookieconsent": "^3.0.0"
+  }
+}

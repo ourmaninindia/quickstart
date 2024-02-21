@@ -1,0 +1,9 @@
+{{- $cookie    := resources.Get "/js/cookieconsent-config.js" }}
+
+{{- $js := slice $cookie  | resources.Concat "js/script.js" }}
+
+{{- if eq hugo.Environment "production" -}}
+    {{- $js = $js | minify | fingerprint -}}
+{{- end -}}
+{{"<!-- see /js/cookieconsent-config.js -->" | safeHTML }}
+<script type="module" src="{{ $js.RelPermalink }}"></script>
